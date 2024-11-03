@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worksheet 7 : JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="nav-left">
+          <p>Wudh Pot Plants</p>
+      </div>
+      <div class="nav-right">
+          <a href="#"><i class="fa-solid fa-house-chimney-window"></i> Home</a>
+          <a href="#"><i class="fa-brands fa-pagelines"></i> Products</a>
+          <a href="index.html"><i class="fa-solid fa-tag"></i> Discount</a>
+          <a href="#" class="active"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+  </nav>
+  </section>
+
+  <section class="main">
+    <div class="container">
+      <div class="headline">
+        <div>
+          <div class="headline-text"><h1>Contact us</h1></div>
+        <div>
+          <h2> </h2>
+            <span class="expiry-date"></span> </br>
+        </div>
+        </div>
+        <img src="images/006.jpg" id="slider-image">
+            <button id="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button id="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+
+      <section class="contact-content">
+        <div class="contact-group">
+            <div class="contact-text">
+                <h3>Wudh Pot Plant</h3>
+                K4 19<br>
+                68159 Mannheim
+                <p>
+                <a href="mailto:wudh@gmx.de" class="contact-button"><i class="fa-solid fa-envelope"></i> Email</a>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.5436229185316!2d8.46430051281655!3d49.493127255709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc255b522a37%3A0x7ca2640d4533b14c!2sK4%2019%2C%2068159%20Mannheim!5e0!3m2!1sde!2sde!4v1730201074337!5m2!1sde!2sde" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script2.js" defer> </script>
+</body>
+</html>
