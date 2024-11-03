@@ -253,3 +253,16 @@ button {
 .contact-text {
     display:inline-block ;
 }
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    position: static;
+    margin-top: 5%;
+    width: 1400px;
+    border-top: 1px dashed;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 7px 0 7px 0;
+}
